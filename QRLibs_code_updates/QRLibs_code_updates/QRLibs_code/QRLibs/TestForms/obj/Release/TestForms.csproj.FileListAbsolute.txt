@@ -1,0 +1,10 @@
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\bin\Release\TestForms.exe.config
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\bin\Release\TestForms.exe
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\bin\Release\TestForms.pdb
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\obj\Release\TestForms.csprojResolveAssemblyReference.cache
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\obj\Release\TestForms.Form1.resources
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\obj\Release\TestForms.Properties.Resources.resources
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\obj\Release\TestForms.csproj.GenerateResource.cache
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\obj\Release\TestForms.csproj.CoreCompileInputs.cache
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\obj\Release\TestForms.exe
+C:\Users\ritakuka\source\repos\QRWriter\TestForms\obj\Release\TestForms.pdb

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NuPack.Extension</name>
+    </assembly>
+    <members>
+        <member name="T:NuPack.Extension.IPlugin">
+            <summary>
+            Plugin to reorganize package builder
+            </summary>
+        </member>
+        <member name="M:NuPack.Extension.IPlugin.Update(NuPack.Extension.Setting,NuGet.PackageBuilder)">
+            <summary>
+            Produce a new package builder based on original.
+            </summary>
+            <param name="setting">Setting used to produce package</param>
+            <param name="package">Package builder</param>
+            <returns></returns>
+        </member>
+        <member name="T:NuPack.Extension.Setting">
+            <summary>
+            Setting used to call NuPack
+            </summary>
+        </member>
+        <member name="M:NuPack.Extension.Setting.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Setting
+            </summary>
+            <param name="solution">Solution</param>
+            <param name="project">Project</param>
+            <param name="configuration">Configuration</param>
+            <param name="plateform">Plateform</param>
+            <param name="assembly">Assembly</param>
+        </member>
+        <member name="P:NuPack.Extension.Setting.Solution">
+            <summary>
+            Solution.
+            </summary>
+        </member>
+        <member name="P:NuPack.Extension.Setting.Project">
+            <summary>
+            Project.
+            </summary>
+        </member>
+        <member name="P:NuPack.Extension.Setting.Configuration">
+            <summary>
+            Configuration.
+            </summary>
+        </member>
+        <member name="P:NuPack.Extension.Setting.Plateform">
+            <summary>
+            Plateform.
+            </summary>
+        </member>
+        <member name="P:NuPack.Extension.Setting.Assembly">
+            <summary>
+            Assembly.
+            </summary>
+        </member>
+    </members>
+</doc>
