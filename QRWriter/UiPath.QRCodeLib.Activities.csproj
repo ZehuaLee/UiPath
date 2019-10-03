@@ -127,6 +127,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MessageExtractor.cs" />
+    <Compile Include="QrCodeDrawer.cs" />
     <Compile Include="UiPath.QRCodeLib.Activities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
