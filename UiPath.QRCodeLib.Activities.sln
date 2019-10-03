@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2027
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPath.QRCodeLib.Activities", "QRWriter\UiPath.QRCodeLib.Activities.csproj", "{AB86B86A-2043-4255-88F7-82D23DDCF6B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPath.QRCodeLib.Activities", "UiPath.QRCodeLib.Activities\UiPath.QRCodeLib.Activities.csproj", "{AB86B86A-2043-4255-88F7-82D23DDCF6B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
