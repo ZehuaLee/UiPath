@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>$title$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Zehua Li</authors>
+    <owners>Zehua Li</owners>
+    <iconUrl>http://www.uipath.com/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://www.uipath.com/hubfs/legalspot/UiPath_Activity_License_Agreement.pdf</licenseUrl>
+    <description>Activities for decoding and encoding 2D QR codes</description>
+  </metadata>
+</package>

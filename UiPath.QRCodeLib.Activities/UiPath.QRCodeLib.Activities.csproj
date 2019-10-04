@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB86B86A-2043-4255-88F7-82D23DDCF6B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UiPath.QRCodeLib.Activities</RootNamespace>
+    <AssemblyName>UiPath.QRCodeLib.Activities</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.DataGrid.Contrib.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.DataGrid.Contrib.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Docking.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.Docking.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Editors.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.Editors.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Ribbon.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.Ribbon.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shared.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.Shared.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.SyntaxEditor.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.Addons.DotNet.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.Text.Addons.DotNet.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.LLParser.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.Text.LLParser.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Text.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.Text.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Wizard.Wpf, Version=18.1.674.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\ActiproSoftware.Wizard.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Humanizer, Version=2.4.0.0, Culture=neutral, PublicKeyToken=979442b78dfc278e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Humanizer.Core.2.4.2\lib\netstandard2.0\Humanizer.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.AvalonEdit, Version=5.0.3.0, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
+      <HintPath>..\packages\AvalonEdit.5.0.3\lib\Net40\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.6.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UiPath.Interop, Version=0.0.7.0, Culture=neutral, PublicKeyToken=461894da7f0ba157, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.19.7.7128.27029\lib\UiPath.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="UiPath.OCR.Contracts, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.OCR.Contracts.2.0.0\lib\net45\UiPath.OCR.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="UiPath.UiAutomation.Activities, Version=19.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\UiPath.UiAutomation.Activities.dll</HintPath>
+    </Reference>
+    <Reference Include="UiPath.UIAutomation.Activities.Design, Version=19.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\UiPath.UIAutomation.Activities.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="UiPath.Vision, Version=1.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.Vision.1.6.1\lib\net452\UiPath.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="UiPath.Vision.Core, Version=1.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.Vision.1.6.1\lib\net452\UiPath.Vision.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UiPath.Wizards, Version=19.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\UiPath.UIAutomation.Activities.19.7.0\lib\net461\UiPath.Wizards.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.5.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.4.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.4\lib\net461\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.4.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.4\lib\net461\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\QRCodeLibAssemblyVersion.cs">
+      <Link>Properties\QRCodeLibAssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Helpers\MessageExtractor.cs" />
+    <Compile Include="Helpers\QrCodeDrawer.cs" />
+    <Compile Include="Activities\QRReadFromImage.cs" />
+    <Compile Include="Activities\QRReadFromPath.cs" />
+    <Compile Include="Activities\QRReadFromUiElement.cs" />
+    <Compile Include="Activities\QRWriteToImage.cs" />
+    <Compile Include="Activities\QRWriteToPath.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UiPath.QRCodeLib.Activities.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NodeMatchRules.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\UiPath.9.0.6877.24355\build\UiPath.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UiPath.9.0.6877.24355\build\UiPath.targets'))" />
+    <Error Condition="!Exists('..\packages\UiPath.19.7.7128.27029\build\UiPath.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UiPath.19.7.7128.27029\build\UiPath.targets'))" />
+  </Target>
+  <Import Project="..\packages\UiPath.9.0.6877.24355\build\UiPath.targets" Condition="Exists('..\packages\UiPath.9.0.6877.24355\build\UiPath.targets')" />
+  <Import Project="..\packages\UiPath.19.7.7128.27029\build\UiPath.targets" Condition="Exists('..\packages\UiPath.19.7.7128.27029\build\UiPath.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>RD /S /Q "$(TargetDir)..\Packages\"
+
+"$(SolutionDir).nuget\NuGet.exe" pack "$(ProjectPath)" -OutputDirectory "..\Packages" -IncludeReferencedProjects -Prop Configuration=$(ConfigurationName)</PostBuildEvent>
+  </PropertyGroup>
+</Project>
