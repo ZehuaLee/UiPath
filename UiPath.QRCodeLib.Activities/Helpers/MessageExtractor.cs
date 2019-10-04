@@ -21,7 +21,7 @@ namespace QRCodeLib
             var multiFormatReader = new MultiFormatReader();
             Result decodedMessage = multiFormatReader.decode(binaryBitmap);
 
-            return decodedMessage.ToString();
+            return decodedMessage?.ToString();
         }
 
         public static string ExtractFromPath(string pathToQrCodeImage)
